@@ -9,5 +9,11 @@ class Second_page extends CI_Controller {
 		$this->load->view('second_page');
 		$this->load->view('footer');
 	}
-
+	
+	public function display($param)
+	{
+		echo "Am in ".__FUNCTION__."<br />";
+		echo $param;
+	}
+	
 }
