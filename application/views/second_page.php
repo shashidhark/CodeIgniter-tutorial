@@ -1,7 +1,16 @@
 		<div id="body" align="center" style="width:100%">
 			<div>
 					<h3>TODO List</h3>
-					<?php echo validation_errors(); ?>
+					<?php echo validation_errors(); 
+					
+						$val = $this->session->userdata("validation");
+						
+						if($val == "pass"){
+								echo "No error";
+						}
+					
+					?>
+						
 					
 						<?php echo form_open('second_page/save'); ?>
 						
