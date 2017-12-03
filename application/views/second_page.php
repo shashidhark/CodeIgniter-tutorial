@@ -6,7 +6,7 @@
 						$val = $this->session->userdata("validation");
 						
 						if($val == "pass"){
-								echo "No error";
+								echo "Successfully inserted to DB";
 						}
 					
 					?>
